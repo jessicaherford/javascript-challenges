@@ -11,19 +11,19 @@ describe('sameLength', function() {
 });
 
 describe('firstGreater', function() {
-  xit('returns true if the first argument is (strictly) greater than the second argument', function() {
+  it('returns true if the first argument is (strictly) greater than the second argument', function() {
     expect(yourCode.firstGreater('a', 'A')).toEqual(true);
     expect(yourCode.firstGreater(3, -1)).toEqual(true);
   });
 
-  xit('returns false if the first argument is less than or equal to the second argument', function() {
+  it('returns false if the first argument is less than or equal to the second argument', function() {
     expect(yourCode.firstGreater('a', 'a')).toEqual(false);
     expect(yourCode.firstGreater(1, 1)).toEqual(false);
   });
 });
 
 describe('firstGreaterOrEqualTo', function() {
-  xit('returns true if the first argument is greater than or equal to the second argument', function() {
+  it('returns true if the first argument is greater than or equal to the second argument', function() {
     expect(yourCode.firstGreaterOrEqualTo('a', 'A')).toEqual(true);
     expect(yourCode.firstGreaterOrEqualTo(1, 2)).toEqual(false);
   });
