@@ -28,31 +28,31 @@ describe('firstGreaterOrEqualTo', function() {
     expect(yourCode.firstGreaterOrEqualTo(1, 2)).toEqual(false);
   });
 
-  xit('returns false if the first argument is (strictly) less than the second argument', function() {
+  it('returns false if the first argument is (strictly) less than the second argument', function() {
     expect(yourCode.firstGreaterOrEqualTo('a', 'b')).toEqual(false);
     expect(yourCode.firstGreaterOrEqualTo(3, -1)).toEqual(true);
   });
 });
 
 describe('firstLengthGreater', function() {
-  xit('returns true if the first argument is (strictly) longer than the second argument\'s length', function() {
+  it('returns true if the first argument is (strictly) longer than the second argument\'s length', function() {
     expect(yourCode.firstLengthGreater('aa', 'A')).toEqual(true);
     expect(yourCode.firstLengthGreater([1,2,3], [1])).toEqual(true);
   });
 
-  xit('returns false if the first argument is less than or equal to the second argument\'s length', function() {
+  it('returns false if the first argument is less than or equal to the second argument\'s length', function() {
     expect(yourCode.firstLengthGreater('a', 'a')).toEqual(false);
     expect(yourCode.firstLengthGreater([1,2,3], [2,3,4])).toEqual(false);
   });
 });
 
 describe('secondGreater', function() {
-  xit('returns true if the second argument is (strictly) greater than the first argument', function() {
+  it('returns true if the second argument is (strictly) greater than the first argument', function() {
     expect(yourCode.secondGreater('a', 'A')).toEqual(false);
     expect(yourCode.secondGreater(-1, 3)).toEqual(true);
   });
 
-  xit('returns false if the second argument is less than or equal to the first argument', function() {
+  it('returns false if the second argument is less than or equal to the first argument', function() {
     expect(yourCode.secondGreater('a', 'a')).toEqual(false);
     expect(yourCode.secondGreater(1, 1)).toEqual(false);
   });
