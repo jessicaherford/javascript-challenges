@@ -1,7 +1,15 @@
 module.exports = {
 
   first: function(array) {
-    // fill in code here
+    return array[0];
+  },
+
+  //return last element for a given Array
+  last: function(array){
+    return in ;
   }
+
+
+
 
 }
