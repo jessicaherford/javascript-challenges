@@ -23,25 +23,25 @@ describe('last', function() {
 });
 
 describe('empty', function() {
-  xit('returns true if the array has no elements', function() {
+  it('returns true if the array has no elements', function() {
     expect(yourCode.empty([])).toEqual(true);
   });
 
-  xit('returns false if the array has elements', function() {
+  it('returns false if the array has elements', function() {
     expect(yourCode.empty([1,2,3])).toEqual(false);
   });
 });
 
 describe('first_n', function() {
-  xit('returns an empty array for an empty array', function() {
+  it('returns an empty array for an empty array', function() {
     expect(yourCode.first_n([], 3)).toEqual([]);
   });
 
-  xit('returns as many elements as xit can when there are less than n', function() {
+  it('returns as many elements as xit can when there are less than n', function() {
     expect(yourCode.first_n([1,2], 3)).toEqual([1,2]);
   });
 
-  xit('returns the first n objects in the array', function() {
+  it('returns the first n objects in the array', function() {
     expect(yourCode.first_n([1,2,3,4,5], 3)).toEqual([1,2,3]);
   });
 });
