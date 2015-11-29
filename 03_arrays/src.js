@@ -66,7 +66,10 @@ module.exports = {
   },
 
   intersection: function(array1, array2){
-
+        var overlap = array1.filter(function(v){
+          return array2.indexOf(v) > -1;
+        })
+        return overlap;
   }
 
 
