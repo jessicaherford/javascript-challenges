@@ -10,6 +10,13 @@
 
 module.exports = {
   peak: function() {
-    // your code here
+    return '/\\';
+  },
+
+  valley: function() {
+    return '___';
+  },
+  peaks: function() {
+
   }
 }
