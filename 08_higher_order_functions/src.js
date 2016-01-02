@@ -1,6 +1,10 @@
 module.exports = {
 
   simpleCall: function(callback){
-    // your code here
+    return callback();
+  },
+
+  each: function(array, arrayItems, callback){
+    return 
   }
 }
