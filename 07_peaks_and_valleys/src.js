@@ -16,7 +16,11 @@ module.exports = {
   valley: function() {
     return '___';
   },
-  peaks: function() {
-
+  peaks: function(num) {
+    var peaks = '';
+    for(i=0; i<num; i++){
+      peaks += '/\\';
+    }
+    return peaks;
   }
 }
