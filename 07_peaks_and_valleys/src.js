@@ -22,5 +22,23 @@ module.exports = {
       peaks += '/\\';
     }
     return peaks;
+  },
+  valleys: function(num){
+    var valleys = '';
+    for(i=0; i<num; i++){
+      valleys += '___';
+    }
+    return valleys;
+  },
+  peaksAndValleys: function(p, v){
+    peaks = '';
+    valleys = '';
+    for(i=0; i<p; i++){
+      peaks += '/\\';
+    }
+    for(i=0; i<v; i++){
+      valleys += '___';
+    }
+    return peaks + valleys;
   }
 }
