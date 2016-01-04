@@ -20,10 +20,13 @@ module.exports = {
     return array.find(func, arg);
   },
 
-  any: function(array, matchy, arg ){
-    
-  }
+  any: function(array, func){
+    return (array.filter(func).length) ? true : false
+  },
 
+  all: function(array, func){
+    return (array.filter(func)) ? true : false
+  }
 
 
 
