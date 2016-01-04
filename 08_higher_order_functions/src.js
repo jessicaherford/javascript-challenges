@@ -13,6 +13,18 @@ module.exports = {
   },
 
   reduce: function(array, value, func){
-    return array.reduce(value, func);
+    return array.reduce(func, value);
+  },
+
+  find: function(array, func, arg){
+    return array.find(func, arg);
+  },
+
+  any: function(array, matchy, arg ){
+    
   }
+
+
+
+
 }
