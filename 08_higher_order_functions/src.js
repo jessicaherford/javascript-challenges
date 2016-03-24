@@ -25,7 +25,9 @@ module.exports = {
   },
 
   all: function(array, func){
-    return (array.filter(func)) ? true : false
+    for (var item in array)
+      if (!func(array[item])) return false;
+     return true;
   }
 
 
