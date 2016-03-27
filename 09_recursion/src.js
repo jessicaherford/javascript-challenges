@@ -36,6 +36,6 @@ module.exports = {
     if(n === 0){
       return 1;
     }
-    return n * this.function(n-1);
+    return n * factorial(n-1);
   }
 }

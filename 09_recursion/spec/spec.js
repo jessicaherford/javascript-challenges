@@ -3,17 +3,17 @@ var yourCode = require('../src');
 describe('factorial', function() {
 
   it('correctly handles the base case', function() {
-    pending();
+    // pending();
     expect(yourCode.factorial(0)).toEqual(1);
   });
 
   it('correctly computes 1! = 1', function() {
-    pending();
+    // pending();
     expect(yourCode.factorial(1)).toEqual(1);
   });
 
   it('correctly computes 2! = 2', function() {
-    pending();
+    // pending();
     expect(yourCode.factorial(2)).toEqual(2);
   });
 
