@@ -2,43 +2,43 @@ var yourCode = require('../src');
 
 describe('maximum', function() {
   it('returns the maximum value from the given array', function() {
-    pending();
+    // pending();
     expect(yourCode.maximum([34, 12, 45, 32, 100])).toEqual(100);
   });
 
   it('returns undefined for an empty array', function() {
-    pending();
+    // pending();
     expect(yourCode.maximum([])).toEqual(undefined);
   });
 });
 
 describe('minimum', function() {
   it('returns the minimum value from the given array', function() {
-    pending();
+    // pending();
     expect(yourCode.minimum([34, 12, 45, 32, 100])).toEqual(12);
   });
 
   it('returns undefined for an empty array', function() {
-    pending();
+    // pending();
     expect(yourCode.minimum([])).toEqual(undefined);
   });
 });
 
 describe('average', function() {
   it('returns the average of the numeric values in the given array', function() {
-    pending();
+    // pending();
     expect(yourCode.average([10, 20, 30])).toEqual(20);
   });
 
   it('returns NaN when the array is empty', function() {
-    pending();
+    // pending();
     expect(yourCode.average([])).toEqual(NaN);
   });
 });
 
 describe('matrixRowMaximum', function() {
   it('returns an Array containing an element representing the maximum of each row of the input', function() {
-    pending();
+    // pending();
     expect(yourCode.matrixRowMaximum([[1,2,3], [3,4,5]])).toEqual([3, 5]);
   });
 });
