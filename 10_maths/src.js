@@ -41,9 +41,19 @@ module.exports = {
   },
 
   matrixRowMaximum: function(arrayOfArrays) {
-    for(i=0;i<arrayOfArrays.length; i++){
+    arrayOfArrays.forEach(function(array){
+      var max = [];
+      var minCompare = 0;
+      array.forEach(function(i){
+      if(i > minCompare){
+        minCompare += i;
+      }
+      max.push(i);
+      console.log(max);
 
-    }
+      })
+      return max;
+    })
   },
 
   matrixRowMinimum: function(arrayOfArrays) {
