@@ -43,15 +43,16 @@ module.exports = {
   matrixRowMaximum: function(arrayOfArrays) {
     arrayOfArrays.forEach(function(array){
       var max = [];
-      var minCompare = 0;
+      console.log(array);
       array.forEach(function(i){
+        var minCompare = 0;
       if(i > minCompare){
         minCompare += i;
       }
-      max.push(i);
-      console.log(max);
+      max.push(minCompare);
 
       })
+      console.log('******' + minCompare);
       return max;
     })
   },
